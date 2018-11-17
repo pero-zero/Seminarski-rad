@@ -26,6 +26,7 @@ namespace udaljenost_između_dviju_točaka
             {
                 X2_koordinata.Text = "";
                 Y2_koordinata.Text = "";
+                Udaljenost_koordinata.Text = "";
                 x_start = e.X;
                 y_start = e.Y;
                 X1_koordianta.Text = x_start.ToString();
@@ -61,7 +62,6 @@ namespace udaljenost_između_dviju_točaka
             Graphics graf = Koordinatni_sustav.CreateGraphics();
             Pen olovka = new Pen(Color.Black);
 
-
             if (mouse_down == true && mouse_up == false)
             {
                 graf.Clear(Color.White);
@@ -74,10 +74,6 @@ namespace udaljenost_između_dviju_točaka
                 graf.DrawLine(olovka, x_kraj - 5, y_kraj + 5, x_kraj + 5, y_kraj - 5);
                 
             }
-            
-            
         }
-
-        
     }
 }
