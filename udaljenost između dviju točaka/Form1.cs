@@ -24,6 +24,8 @@ namespace udaljenost_između_dviju_točaka
         {            
             if (e.Button == MouseButtons.Left)
             {
+                X2_koordinata.Text = "";
+                Y2_koordinata.Text = "";
                 x_start = e.X;
                 y_start = e.Y;
                 X1_koordianta.Text = x_start.ToString();
