@@ -21,8 +21,7 @@ namespace udaljenost_između_dviju_točaka
         }
 
         private void Koordinatni_sustav_MouseDown(object sender, MouseEventArgs e)
-        {
-            
+        {            
             if (e.Button == MouseButtons.Left)
             {
                 x_start = e.X;
@@ -30,12 +29,11 @@ namespace udaljenost_između_dviju_točaka
                 X1_koordianta.Text = x_start.ToString();
                 Y1_koordinata.Text = y_start.ToString();
                 Crtaj(true, false);
-            }
-            
+            }            
         }
+
         private void Koordinatni_sustav_MouseUp(object sender, MouseEventArgs e)
         {
-
             if (e.Button == MouseButtons.Left)
             {
                 x_kraj = e.X;
@@ -61,8 +59,10 @@ namespace udaljenost_između_dviju_točaka
             Graphics graf = Koordinatni_sustav.CreateGraphics();
             Pen olovka = new Pen(Color.Black);
 
+
             if (mouse_down == true && mouse_up == false)
             {
+                graf.Clear(Color.White);
                 graf.DrawLine(olovka, x_start + 5, y_start + 5, x_start - 5, y_start - 5);
                 graf.DrawLine(olovka, x_start - 5, y_start + 5, x_start + 5, y_start - 5);
             }
@@ -70,8 +70,10 @@ namespace udaljenost_između_dviju_točaka
             {
                 graf.DrawLine(olovka, x_kraj + 5, y_kraj + 5, x_kraj - 5, y_kraj - 5);
                 graf.DrawLine(olovka, x_kraj - 5, y_kraj + 5, x_kraj + 5, y_kraj - 5);
-                graf.DrawLine(olovka, x_start, y_start, x_kraj, y_kraj);
+                
             }
+            
+            
         }
 
         
