@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace udaljenost_između_dviju_točaka
 {
-    public partial class Form1 : Form
+    public partial class UdaljenostIzmeđuDvijuTočaka : Form
     {
         int x_start=0, y_start=0;
         int x_kraj=0, y_kraj=0;
-        public Form1()
+        public UdaljenostIzmeđuDvijuTočaka()
         {
             InitializeComponent();
             
@@ -38,7 +38,7 @@ namespace udaljenost_između_dviju_točaka
             {
                 x_kraj = e.X;
                 y_kraj = e.Y;
-                double rezultat = Math.Sqrt(Math.Pow(x_kraj - x_start, 2) + Math.Pow(y_kraj - y_start, 2));
+                double rezultat =Math.Round(Math.Sqrt(Math.Pow(x_kraj - x_start, 2) + Math.Pow(y_kraj - y_start, 2)),3);
                 Y2_koordinata.Text = y_kraj.ToString();
                 X2_koordinata.Text = x_kraj.ToString();
                 Udaljenost_koordinata.Text = rezultat.ToString();

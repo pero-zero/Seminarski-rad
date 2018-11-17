@@ -1,6 +1,6 @@
 ﻿namespace udaljenost_između_dviju_točaka
 {
-    partial class Form1
+    partial class UdaljenostIzmeđuDvijuTočaka
     {
         /// <summary>
         /// Required designer variable.
@@ -137,7 +137,7 @@
             this.Udaljenost_koordinata.Size = new System.Drawing.Size(100, 20);
             this.Udaljenost_koordinata.TabIndex = 10;
             // 
-            // Form1
+            // UdaljenostIzmeđuDvijuTočaka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,8 +153,8 @@
             this.Controls.Add(this.X1_koordianta);
             this.Controls.Add(this.X1_vrijednost);
             this.Controls.Add(this.Koordinatni_sustav);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "UdaljenostIzmeđuDvijuTočaka";
+            this.Text = "Udaljenost između dviju točaka";
             this.ResumeLayout(false);
             this.PerformLayout();
 

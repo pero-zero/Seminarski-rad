@@ -16,7 +16,7 @@ namespace udaljenost_između_dviju_točaka
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new UdaljenostIzmeđuDvijuTočaka());
         }
     }
 }
