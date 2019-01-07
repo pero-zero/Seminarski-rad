@@ -53,6 +53,8 @@ namespace udaljenost_između_dviju_točaka
             }
         }
 
+        
+
         private void Koordinatni_sustav_Paint(object sender, PaintEventArgs e)
         {
             
@@ -60,7 +62,7 @@ namespace udaljenost_između_dviju_točaka
         private void Crtaj(bool mouse_down, bool mouse_up)
         {
             Graphics graf = Koordinatni_sustav.CreateGraphics();
-            Pen olovka = new Pen(Color.Black);
+            Pen olovka = Pens.Black;
 
             if (mouse_down == true && mouse_up == false)
             {
@@ -74,6 +76,7 @@ namespace udaljenost_između_dviju_točaka
                 graf.DrawLine(olovka, x_kraj - 5, y_kraj + 5, x_kraj + 5, y_kraj - 5);
                 
             }
+           
         }
     }
 }
